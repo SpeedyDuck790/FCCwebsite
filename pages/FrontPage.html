@@ -13,12 +13,12 @@
 <!-- Latest compiled JavaScript -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </head>
-<body class="text-bg-dark d-flex flex-column">
+<body class="text-bg-dark d-flex flex-column" style="text-align: center;">
   <header>
       <h1 class=" text-white bg-black" style="text-align: center; width: 100%;">Frankston Chess Club</h1>
     <img class="mx-auto d-block" style="width: 100%; height: auto" src="/res/EgIMGBlur.jpg" alt="picture of club">
   </header>
-  <div class="container-fluid p-2 bg-dark text-white d-flex justify-content-center align-items-center">
+  <div class="container-fluid p-2 bg-secondary text-white d-flex justify-content-center align-items-center">
     <p class="h6 px-1">Open Every Wednesday 7PM - 10:30PM</p> 
     <p class="fw-bold h6 px-4">"A Club for all levels of Chess"</p> 
     <p class="h6 px-1">Leawarra House, 200 Beach St, Frankston</p>
@@ -40,7 +40,7 @@
     </ul>
   </nav>
 
-  <p class="p-2 w-35 m-4" style="font-family: monospace; text-align: center;">
+  <p class="p-2 m-4" style="font-family: monospace; text-align: center;">
     Welcome to Frankston Chess Club. Our Club has returned to life after the lockdowns of 2020,
     with a solid core of members, financial stability and a happy atmosphere on Wednesday
     evenings. Our Members are invited to use our website to keep abreast of activities at the Club.
@@ -49,12 +49,18 @@
     playing online chess during the lockdown period, so why not come along and play some face to
     face chess too!</p>
 
+
   <h3 class="card-title text-lg-center">Club Calender</h3>
-<div class="m-auto">
-  <img src="/res/ScheduleDummy.JPG" alt="schedule">
-</div>  
-<h2>Meet The Committee</h2>
-<div class="bg-black h-25 m-3 d-flex flex-row p-3" style="justify-content: space-around; align-items: center;">
+  <div class="schedule-container d-flex justify-content-between">
+    <p style="margin-left: 20%; max-width: 15%;">MemberShip Details HERE that sprials onwards about prices and deals</p>
+    <img src="/res/2023(2)Schedule.JPG" alt="schedule">
+    <p style="margin-right: 20%; max-width: 15%;">Drink sales maybe not so sure what to place heresadas</p>
+  </div> 
+
+
+
+<h2 class="mx-auto">Meet The Club</h2>
+<div class=" bg-black h-25 m-3 d-flex flex-row p-3" style="justify-content: space-around; align-items: center;">
   <div class="card" style="width: 18rem;margin: 20px; ">
     <img src="/res/dummypic.jpg" class="card-img-top" alt="...">
     <div class="card-body">
@@ -108,8 +114,8 @@
   </div>
 
 </div>
-  <footer>
-    <p>&copy; 2023 Frankston Chess Club</p>
+  <footer class="bg-gradient">
+    <b class="text-black">&copy; 2023 Frankston Chess Club</b>
   </footer>
 
 </body>
@@ -128,5 +134,11 @@
 	height: 100%;
 	margin: 15px auto;
 	width: 100%;
+}
+
+.schedule-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 </style>
