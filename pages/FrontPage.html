@@ -13,7 +13,7 @@
 <!-- Latest compiled JavaScript -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </head>
-<body class="text-bg-dark">
+<body class="text-bg-dark d-flex flex-column">
   <header>
       <h1 class=" text-white bg-black" style="text-align: center; width: 100%;">Frankston Chess Club</h1>
     <img class="mx-auto d-block" style="width: 100%; height: auto" src="/res/EgIMGBlur.jpg" alt="picture of club">
@@ -23,7 +23,7 @@
     <p class="fw-bold h6 px-4">"A Club for all levels of Chess"</p> 
     <p class="h6 px-1">Leawarra House, 200 Beach St, Frankston</p>
 </div>
-  <nav class="nav nav-pills bg-black d-flex justify-content-center align-items-center">
+  <nav class=" nav nav-pills bg-black d-flex justify-content-center align-items-center">
     <ul class="nav nav-pills">
       <li class="nav-item">
         <a class="nav-link" href="FrontPage.html">Home</a>
@@ -40,48 +40,93 @@
     </ul>
   </nav>
 
-  <p class="d-flex justify-content-center align-items-center p-2">Blurb website</p>
+  <p class="p-2 w-35 m-4" style="font-family: monospace; text-align: center;">
+    Welcome to Frankston Chess Club. Our Club has returned to life after the lockdowns of 2020,
+    with a solid core of members, financial stability and a happy atmosphere on Wednesday
+    evenings. Our Members are invited to use our website to keep abreast of activities at the Club.
+    New chess players and backgammon players in the Frankston area are warmly invited to come
+    down and join us at Leawarra House on Wednesday evenings. Many people have taken up
+    playing online chess during the lockdown period, so why not come along and play some face to
+    face chess too!</p>
 
   <h3 class="card-title text-lg-center">Club Calender</h3>
-  <main class="container d-flex justify-content-center align-items-center bg-dark-subtle">
-    <div>
-        <ol class="text-black">
-        </ol>
+<div class="m-auto">
+  <img src="/res/ScheduleDummy.JPG" alt="schedule">
+</div>  
+<h2>Meet The Committee</h2>
+<div class="bg-black h-25 m-3 d-flex flex-row p-3" style="justify-content: space-around; align-items: center;">
+  <div class="card" style="width: 18rem;margin: 20px; ">
+    <img src="/res/dummypic.jpg" class="card-img-top" alt="...">
+    <div class="card-body">
+      <h5 class="card-title">Tim Broome (President)</h5>
+      <p class="card-text">Our Top Player and long time president of the club, Tim is sure to give you a Hard game</p>
     </div>
-  </main>
-  
+    <ul class="list-group list-group-flush">
+      <li class="list-group-item">2000+ lvl</li>
+      <li class="list-group-item">President for 4years</li>
+      <li class="list-group-item">a fun guy to talk to</li>
+    </ul>
+  </div>
+
+  <div class="card" style="width: 18rem;margin: 20px;">
+    <img src="/res/dummypic.jpg" class="card-img-top" alt="...">
+    <div class="card-body">
+      <h5 class="card-title">James Hill (Vice)</h5>
+      <p class="card-text">Our Newest committee member who is as good but Dubious Player as he marches for improvement, The king of Throwing Games</p>
+    </div>
+    <ul class="list-group list-group-flush">
+      <li class="list-group-item">1700+lvl</li>
+      <li class="list-group-item">Joined late 2022</li>
+      <li class="list-group-item">Hates Losing</li>
+    </ul>
+  </div>
+
+  <div class="card" style="width: 18rem;margin: 20px;">
+    <img src="/res/dummypic.jpg" class="card-img-top" alt="...">
+    <div class="card-body">
+      <h5 class="card-title">Matt Sierdinski(Organsier)</h5>
+      <p class="card-text">Our main organiser of Tournements and schedules, matt will sure give you some tricky positions if that be on the board or a Weekly Puzzle</p>
+    </div>
+    <ul class="list-group list-group-flush">
+      <li class="list-group-item">1500+ lvl (unless knights included)</li>
+      <li class="list-group-item">Knowledgable on tourney formats</li>
+      <li class="list-group-item">Cubing Guy</li>
+    </ul>
+  </div>
+
+  <div class="card" style="width: 18rem; margin: 20px;">
+    <img src="/res/dummypic.jpg" class="card-img-top" alt="...">
+    <div class="card-body">
+      <h5 class="card-title">Russel (general member)</h5>
+      <p class="card-text">Been with the club since the dinosuars and is a passionate chess enthusiast that will sure teach you to learn a thing or two</p>
+    </div>
+    <ul class="list-group list-group-flush">
+      <li class="list-group-item">1400+ lvl</li>
+      <li class="list-group-item">Club History fanatic</li>
+      <li class="list-group-item">Knows his chess pawn structures!</li>
+    </ul>
+  </div>
+
+</div>
   <footer>
     <p>&copy; 2023 Frankston Chess Club</p>
   </footer>
 
-  
-  <script>
-    // Get the current date
-    let date = new Date();
-
-    // Find the next Wednesday
-    date.setDate(date.getDate() + ((3 + 7 - date.getDay()) % 7));
-
-    // Get the date for August next year
-    let nextYear = new Date(date.getFullYear() + 1, 7, 31);
-
-    // Get the ordered list
-    let ol = document.querySelector('ol');
-
-    // While the current date is before August next year
-    while (date < nextYear) {
-        // Create a new list item
-        let li = document.createElement('li');
-
-        // Set the text of the list item to the current date
-        li.textContent = date.toISOString().split('T')[0];
-
-        // Add the list item to the ordered list
-        ol.appendChild(li);
-
-        // Add 7 days to the current date
-        date.setDate(date.getDate() + 7);
-    }
-</script>
 </body>
 </html>
+
+
+<style>
+  .chess {
+  background-image: 
+		linear-gradient(90deg, #333 30px, white 30px),
+		linear-gradient(90deg, white 30px, #333 30px),
+		linear-gradient(90deg, #333 30px, white 30px);
+	background-position: 0 0, 0 30px, 0 60px;
+	background-repeat: repeat-x;
+	background-size: 60px 30px, 60px 30px, 60px 30px;
+	height: 100%;
+	margin: 15px auto;
+	width: 100%;
+}
+</style>

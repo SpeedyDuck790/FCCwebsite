@@ -26,8 +26,8 @@
         </li>
       </ul>
     </nav>
-    <div style="display: flex;justify-content: space-between;">
-    <div class="block-container">
+    <div class="d-flex flex-row">
+    <div class="block-container w-50 m-auto">
       <div class="News">current</div>
       <div class="News"></div>
       <div class="News"></div>
@@ -39,10 +39,43 @@
       <div class="News"></div>
       <div class="News">Year ago Max</div>
     </div>
-    <div class="block-container">
-        <div class="Winnerblock">FCC Year long point system timetable</div>
-      <div class="block"> recent Top3s</div>
-      <div class="block"> Upcoming Round</div>
+    <div class="block-container w-25">
+        <div class="block">FCC Year long point system timetable</div>
+
+      <div class="block">
+        <table class="table-bordered table-striped w-100 h-100 text-center">
+          <thead>
+            <tr>
+              <th colspan="3">-Frankston Club Championship- Final Standings</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">1</th>
+              <td>Matt.S</td>
+              <td>7/7</td>
+            </tr>
+            <tr>
+              <th scope="row">2</th>
+              <td>Magnus.C</td>
+              <td>5.5/7</td>
+            </tr>
+            <tr>
+              <th scope="row">3</th>
+              <td>James.H</td>
+              <td>0/7</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="block">
+        <h4>Tornelo</h4>
+        <p>Directly navigate future pairings</p>
+        <button>
+          HERE
+        </button>
+      </div>
       <div class="block"> Recent Round</div>
     </div>
 </div>
@@ -59,26 +92,20 @@
   }
   
   .block {
-    width: 300px;
-    height: 200px;
-    margin: 10px;
-    padding: 10px;
-    background-color: rgb(39, 38, 38);
-  }
-
-  .Winnerblock {
-    width: 300px;
-    height: 500px;
+    width: 100%;
+    height: fit-content;
     margin: 10px;
     padding: 10px;
     background-color: rgb(39, 38, 38);
   }
 
   .News {
-    width: 400px;
-    height: 100px;
+    width: 80%;
+    height: fit-content;
     margin: 10px;
     padding: 10px;
     background-color: rgb(39, 38, 38);
+    border-style:ridge;
+    border-color: antiquewhite;
   }
 </style>
