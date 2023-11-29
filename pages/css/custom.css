@@ -8,6 +8,9 @@ h1, h2, h3, h4, h5, h6 {
 	}
 	
 .feature {
+	/* background-image: url('res/your-image.jpg');
+		background-repeat: no-repeat;
+		background-size: cover; */
 	background-color: rgb(17, 62, 130);
 	color: rgb(0, 0, 0);
 	}
