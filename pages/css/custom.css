@@ -8,10 +8,10 @@ h1, h2, h3, h4, h5, h6 {
 	}
 	
 .feature {
-	/* background-image: url('res/your-image.jpg');
+	 background-image: url("/res/EgIMGBlur.jpg");
 		background-repeat: no-repeat;
-		background-size: cover; */
-	background-color: rgb(17, 62, 130);
+		background-size: cover; 
+	/* background-color: rgb(17, 62, 130); */
 	color: rgb(0, 0, 0);
 	}
 	
@@ -21,7 +21,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .footer-blurb {
     padding: 30px 0;
-    background-color: goldenrod;
+    background-color: rgb(87, 83, 74);
     color: black;
 }
     

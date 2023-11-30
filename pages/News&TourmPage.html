@@ -1,111 +1,117 @@
 
+<!-- FILEPATH: /c:/Users/James/OneDrive/Desktop/Coding Folder/PROJECTS/Websites/FCCwebsite/pages/News&TourmPage.html -->
+<!-- BEGIN: abpxx6d04wxr -->
 <!DOCTYPE html>
 <html>
   <head>
-    <title>FCCNews</title>
-    <!-- Latest compiled and minified CSS -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
-  <!-- Latest compiled JavaScript -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
-  </head>
-  <body class="bg-dark text-white">
-    <h1 class=" text-center">NEWS/Tournement Results</h1>
-    <nav class="nav nav-pills bg-black d-flex justify-content-center align-items-center">
-      <ul class="nav nav-pills">
-        <li class="nav-item">
-          <a class="nav-link" href="FrontPage.html">Home</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="HistoryPage.html">History</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="News&TourmPage.html">Whats News</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="ContactPage.html">Contacts</a>
-        </li>
-      </ul>
-    </nav>
-    <div class="d-flex flex-row">
-    <div class="block-container w-50 m-auto">
-      <div class="News">current</div>
-      <div class="News"></div>
-      <div class="News"></div>
-      <div class="News"></div>
-      <div class="News"></div>
-      <div class="News"></div>
-      <div class="News"></div>
-      <div class="News"></div>
-      <div class="News"></div>
-      <div class="News">Year ago Max</div>
-    </div>
-    <div class="block-container w-25">
-        <div class="block">FCC Year long point system timetable</div>
-
-      <div class="block">
-        <table class="table-bordered table-striped w-100 h-100 text-center">
-          <thead>
-            <tr>
-              <th colspan="3">-Frankston Club Championship- Final Standings</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <th scope="row">1</th>
-              <td>Matt.S</td>
-              <td>7/7</td>
-            </tr>
-            <tr>
-              <th scope="row">2</th>
-              <td>Magnus.C</td>
-              <td>5.5/7</td>
-            </tr>
-            <tr>
-              <th scope="row">3</th>
-              <td>James.H</td>
-              <td>0/7</td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
-
-      <div class="block">
-        <h4>Tornelo</h4>
-        <p>Directly navigate future pairings</p>
-        <button>
-          HERE
-        </button>
-      </div>
-      <div class="block"> Recent Round</div>
-    </div>
-</div>
-  </body>
-  <footer>
-    <p>&copy;2023 Frankston Chess Club</p>
-  </footer>
-</html>
-
-<style>
-  .block-container {
-    display: flex;
-    flex-direction: column;
-  }
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
   
-  .block {
-    width: 100%;
-    height: fit-content;
-    margin: 10px;
-    padding: 10px;
-    background-color: rgb(39, 38, 38);
-  }
+    <title>Frankston Chess Club</title>
+  
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+  
+    <!-- Custom CSS: You can use this stylesheet to override any Bootstrap styles and/or apply your own styles -->
+    <link href="css/custom.css" rel="stylesheet">
+  </head>
+  
+  <body>
+  
+    <!-- Navigation -->
+    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+      <div class="container">
+        <!-- Logo and responsive toggle -->
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="index.html">
+            <img src="/res/FCCLOGO.png" style="height: 200%;" alt="picture of club">
+          </a>
+        </div>
+        <!-- Navbar links -->
+        <div class="collapse navbar-collapse" id="navbar">
+          <ul class="nav navbar-nav">
+            <li class="active">
+              <a href="index.html">Home</a>
+            </li>
+            <li>
+              <a href="News&TourmPage.html">Tournements</a>
+            </li>
+            <li>
+              <a href="HistoryPage.html">History</a>
+            </li>
+            <li>
+              <a href="Games.html">Club Games</a>
+            </li>
+          </ul>
+        </div>
+        <!-- /.navbar-collapse -->
+      </div>
+      <!-- /.container -->
+    </nav>
 
-  .News {
-    width: 80%;
-    height: fit-content;
-    margin: 10px;
-    padding: 10px;
-    background-color: rgb(39, 38, 38);
-    border-style:ridge;
-    border-color: antiquewhite;
-  }
-</style>
+    <div class="container">
+            <div class="row">
+              <div class="col-md-6">
+                <!-- Event Info Boxes -->
+                <div class="event-info">
+                  <h3>Upcoming Events</h3>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam euismod, nisl ac lacinia ultrices, justo nunc lacinia tellus, ac tincidunt nunc nunc vel nunc.</p>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <!-- Stat Table Board for Leaderboards -->
+                <table class="table">
+                  <thead>
+                    <tr>
+                      <th>Player</th>
+                      <th>Rating</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>John Doe</td>
+                      <td>1800</td>
+                    </tr>
+                    <tr>
+                      <td>Jane Smith</td>
+                      <td>2000</td>
+                    </tr>
+                    <tr>
+                      <td>Mike Johnson</td>
+                      <td>1700</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+
+      <!-- END: ed8c6549bwf9 -->
+        <div class="col-md-6">
+          <!-- Event Info Boxes -->
+          <div class="event-info">
+            <!-- Add your event info boxes here -->
+          </div>
+        </div>
+        <div class="col-md-6">
+          <!-- Stat Table Board for Leaderboards -->
+          <table class="table">
+            <!-- Add your stat table board for leaderboards here -->
+          </table>
+        </div>
+      </div>
+    </div>
+
+<!-- END: abpxx6d04wxr -->
+<!-- BEGIN: be15d9bcejpp -->
+  </body>
+</html>
+<!-- END: be15d9bcejpp -->
