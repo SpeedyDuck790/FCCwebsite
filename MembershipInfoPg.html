@@ -16,7 +16,25 @@
     <!-- StyleSheet -vanilla css- -->
     <link href="css/custom.css" rel="stylesheet">
 
-
+<style>
+    .child{
+        text-align: center;
+        background-color: rgb(108, 253, 71,0.75);
+        width: 25%;
+    }
+    .adult{
+        text-align: center;
+        margin-top: 5px;
+        width: 30%;
+        background-color: rgb(88, 168, 248,0.750);
+    }
+    .concession{
+        text-align: center;
+        margin-top: 5px;
+        width: 35%;
+      background-color: rgba(255, 99, 71, 0.750);  
+    }
+</style>
 </head>
     
     <body>
@@ -43,23 +61,23 @@
 
     <!-- main content -->
     <div class="container">
-        <div class="box">
+        <div class="box text-center">
             <!-- Your membership information content goes here -->
             <h1>Membership Information</h1>
             <h3>Currently Payments are Completed in Person</h3>
             <a href="/res/MembershipForm.pdf">Membership Form</a>
     
             <div class="tier">
-                <div class="tier-box" style="background-color: springgreen;">
+                <div class="container child">
                     <h3>Child</h3>
                     <b>$XX/yr</b>
                 </div>
-                <div class="tier-box" style="background-color: dodgerblue;">
+                <div class="container adult">
                     <h3>Adult</h3>
                     <b>$XX/yr</b>
 
                 </div>
-                <div class="tier-box" style="background-color: tomato;">
+                <div class="container concession">
                     <h3>Concession</h3>
                     <b>$XX/yr</b>
 

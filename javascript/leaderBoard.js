@@ -58,7 +58,7 @@ for (let x = 0; x < leaderboardData.length; x++) {
 
 
 //---------------------------CHAMPIONS INSERTATION HERE
-const champs = ["Jared","Tim","James","Ege","---"]
+const champs = ["Jared","Tim","James","Ege","Jack"]
 
    
     let ChampBoard = document.getElementById("ClubChamps");
