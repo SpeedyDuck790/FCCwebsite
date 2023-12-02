@@ -1,6 +1,4 @@
 
-<!-- FILEPATH: /c:/Users/James/OneDrive/Desktop/Coding Folder/PROJECTS/Websites/FCCwebsite/pages/News&TourmPage.html -->
-<!-- BEGIN: abpxx6d04wxr -->
 <!DOCTYPE html>
 <html>
 <head>
@@ -19,7 +17,20 @@
 
 
 </head>
-  
+  <style>
+    .Tevents{
+      width: auto; border: 4px; border-style:groove; border-color: darkslategrey;
+    }
+    .first{
+      background-color: rgba(215, 206, 30, 0.5);
+    }
+    .second{
+      background-color: rgba(138, 135, 132, 0.5);
+    }
+    .third{
+      background-color: rgba(160, 99, 39, 0.5);
+    }
+  </style>
   <body>
   
     <!-- Navigation -->
@@ -34,10 +45,10 @@
         <!-- Navbar links -->
         <div class="collapse navbar-collapse" id="navbar">
           <ul class="nav navbar-nav">
-            <li class="active">
+            <li>
               <a href="index.html">Home</a>
             </li>
-            <li>
+            <li class="active">
               <a href="News&TourmPage.html">Tournements</a>
             </li>
             <li>
@@ -61,32 +72,32 @@
                   <h3>FrankstonChessClub Tournaments</h3>
                   <p>Our <a href="">Tournament Rules</a> and <a href="">Chess Tournaments 101</a></p>
 
-                  
-                  <div class="container" style="border: 4px; border-style:groove; border-color: darkslategrey; width: auto; background-color:rgb(210, 250, 239, 0.25);">
-                    <h4>FCCC Blitz</h4><b>Date:xx/xx/xxxx - xx/xx/xxxx</b>
-                    <p>a blitz Tournament </p>
-                    <p>Time Control: Blitz [5+2] <br>Rounds: 12 <br>Participants:NA <br>Type:ACF</p>
-                  </div>
-                  
-                  <div class="container" style="width: auto; background-color:rgba(59, 195, 52, 0.250); border: 4px; border-style:groove; border-color: darkslategrey;">
-                    <h4>Fun Night 960</h4><b>Date:xx/xx/xxxx - xx/xx/xxxx</b>
-                    <p>A fun night to try out something random</p>
-                    <p>Time Control: Blitz [5+2] <br>Rounds: 7 <br>Participants:20 <br>Type:Club Ratings</p>
-                  </div>
-
-                  <div class="container" style="width: auto; background-color:rgba(150, 150, 115, 0.7);border: 4px; border-style:groove; border-color: darkslategrey;">
-                    <h4>FCCC Classical</h4><b>Date:xx/xx/xxxx - xx/xx/xxxx</b>
+                  <div class="container Tevents">
+                    <h4>FCCC Classical</h4><p class="Date">11/11/2027</p>
                     <p>The Championship held Annually to see whos the top player <br>Top Player will Host the Simul and sign the Trophy <br>Rounds weekly 4th week catchup</p>
                     <p>Time Control: Classical [60+30] <br>Rounds: 7 <br>Participants:15 <br>Type:Club Ratings</p>
                   </div>
-                  <div class="container"
-                    style="width: auto; background-color:rgba(150, 150, 115, 0.7);border: 4px; border-style:groove; border-color: darkslategrey;">
-                    <h4>Blitz Night</h4><b>Date:xx/xx/xxxx - xx/xx/xxxx</b>
+                  
+                  
+                  <div  class="container Tevents">
+                    <h4>Fun Night 960</h4><p class="Date">11/11/2024</p>
+                    <p>A fun night to try out something random</p>
+                    <p>Time Control: Blitz [5+2] <br>Rounds: 7 <br>Participants:20 <br>Type:Club Ratings</p>
+                  </div>
+                  <div class="container Tevents">
+                    <h4>Blitz Night</h4><p class="Date">12/2/2023</p>
                     <p> whos the top blitz funny guy player
                       <br>1 day Tournament</p>
-                    <p>Time Control: Blitz [3+2] <br>Rounds: 9 <br>Participants:35 <br>Type:Club Ratings</p>
+                      <p>Time Control: Blitz [3+2] <br>Rounds: 9 <br>Participants:35 <br>Type:Club Ratings</p>
+                    </div>
+                    
+                  
+                  <div class="container Tevents">
+                    <h4>FCCC Blitz</h4><p class="Date">11/11/2020</p>
+                    <p>a blitz Tournament </p>
+                    <p>Time Control: Blitz [5+2] <br>Rounds: 12 <br>Participants:NA <br>Type:ACF</p>
                   </div>
-                </div>
+                  </div>
               </div>
               <div class="col-md-6">
                 <!-- Stat Table Board for Leaderboards -->
@@ -99,7 +110,7 @@
                   <h4>FCC Fast Blitz Champion: ---</h4>
                   
                 </div>
-                <table class="table table-sm">
+                <table class="table table-sm" id="leaderboard">
                   <h2>Club Annual Circut</h2>
                   <p>points collected by memebers placing well in Tournements to win an overrall prize it resets at the end of the
                     finacial year(july)</p>
@@ -114,30 +125,7 @@
                     </tr>
                   </thead>
                   <tbody>
-                    <tr style="background-color: rgba(215, 206, 30, 0.5);">
-                      <td>1</td>
-                      <td>James Hill</td>
-                      <td>10</td>
-                      <td>1800</td>
-                      <td>10/4/1</td>
-                      <td>5</td>
-                    </tr>
-                    <tr style="background-color: rgba(138, 135, 132, 0.5);">
-                      <td>2</td>
-                      <td>matt s</td>
-                      <td>7</td>
-                      <td>1600</td>
-                      <td>7/1/7</td>
-                      <td>5</td>
-                    </tr>
-                    <tr style="background-color: rgba(160, 99, 39, 0.5);">
-                      <td>3</td>
-                      <td>health</td>
-                      <td>5</td>
-                      <td>1200</td>
-                      <td>0/0/10</td>
-                      <td>3</td>
-                    </tr>
+                    <!-- the data of players is loaded in via leaderBoard.js -->
                   </tbody>
                 </table>
                 <button type="button" class="btn btn-info" data-toggle="button" aria-pressed="false" autocomplete="off">
@@ -149,8 +137,8 @@
           </div>
 
 
-<!-- END: abpxx6d04wxr -->
-<!-- BEGIN: be15d9bcejpp -->
+<script src="javascript/eventBoard.js"></script><!--how the Events are collored to date!-->
+<script src="javascript/leaderBoard.js"></script>
   </body>
 </html>
-<!-- END: be15d9bcejpp -->
+
