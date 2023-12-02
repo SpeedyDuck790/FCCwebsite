@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+
+    <title>Frankston Chess Club</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- StyleSheet -vanilla css- -->
+    <link href="css/custom.css" rel="stylesheet">
+
+    <style>
+        /* Basic styling for layout */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #222;
+            /* Dark background */
+            color: #fff;
+            /* Light text */
+            display: flex;
+            flex-direction: column;
+            height: 100vh;
+            /* Full height of viewport */
+        }
+
+        .container {
+            display: flex;
+            flex: 1;
+        }
+
+        .sidebar {
+            width: 200px;
+            background-color: #333;
+            /* Dark sidebar */
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            /* Align at the bottom */
+        }
+
+        .main-content {
+    flex: 1;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+        .image-list {
+            list-style: none;
+            padding: 0;
+        }
+
+        .image-list li {
+            margin-bottom: 10px;
+            cursor: pointer;
+        }
+
+        .image {
+            max-width: 100%;
+            height: auto;
+        }
+
+        .blurb {
+            margin-top: 10px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+        <div class="container">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="index.html">
+                    <img src="/res/FCCLOGO.png" style="height: 200%;" alt="picture of club">
+                </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+                <ul class="nav navbar-nav">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="News&TourmPage.html">Tournements</a></li>
+                    <li><a href="HistoryPage.html">History</a></li>
+                    <li><a href="Games.html">Club Games</a></li>
+                    <li class="active"><a href="MembershipInfoPg.html">Membership</a></li>
+                    <li><a href="ContactPage.html">Contacts</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="main-content">
+            <img id="displayedImage" class="image" src="res/FCCLOGO.png" alt="Image 1">
+            <h4 id="blurbText" class="blurb">Select a Game</h4>
+        </div>
+        <div class="sidebar">
+            <ul class="image-list">
+                <li onclick="changeImage(0)">James Vs Health 1</li>
+                <li onclick="changeImage(1)">Matt vs James</li>
+                <li onclick="changeImage(2)">James Vs Health 2</li>
+                <!-- Add more image names here -->
+            </ul>
+        </div>
+    </div>
+
+    <script>
+        // JavaScript to change image and blurb based on selected tab
+        const images = ['res/Games/board (7).gif', 'res/Games/board (5).gif', 'res/Games/board (6).gif'];
+        const blurbs = ['James Vs Health', 'Matt vs James', 'James Vs Health'];
+
+        function changeImage(index) {
+            const displayedImage = document.getElementById('displayedImage');
+            const blurbText = document.getElementById('blurbText');
+
+            displayedImage.src = images[index];
+            displayedImage.alt = `Image ${index + 1}`;
+            blurbText.textContent = blurbs[index];
+        }
+    </script>
+</body>
+
+</html>

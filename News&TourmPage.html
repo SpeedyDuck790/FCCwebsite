@@ -32,113 +32,66 @@
     }
   </style>
   <body>
-  
-    <!-- Navigation -->
-    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
-      <div class="container">
-        <!-- Logo and responsive toggle -->
-        <div class="navbar-header">
-          <a class="navbar-brand" href="index.html">
-            <img src="/res/FCCLOGO.png" style="height: 200%;" alt="picture of club">
-          </a>
-        </div>
-        <!-- Navbar links -->
-        <div class="collapse navbar-collapse" id="navbar">
-          <ul class="nav navbar-nav">
-            <li>
-              <a href="index.html">Home</a>
-            </li>
-            <li class="active">
-              <a href="News&TourmPage.html">Tournements</a>
-            </li>
-            <li>
-              <a href="HistoryPage.html">History</a>
-            </li>
-            <li>
-              <a href="Games.html">Club Games</a>
-            </li>
-          </ul>
-        </div>
-        <!-- /.navbar-collapse -->
-      </div>
-      <!-- /.container -->
-    </nav>
+        <!-- Nav Bar -->
+        <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <a class="navbar-brand" href="index.html">
+                <img src="/res/FCCLOGO.png" style="height: 200%;" alt="picture of club">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <ul class="nav navbar-nav">
+                <li><a href="index.html">Home</a></li>
+                <li class="active"><a href="News&TourmPage.html">Tournements</a></li>
+                <li><a href="HistoryPage.html">History</a></li>
+                <li><a href="Games.html">Club Games</a></li>
+                <li><a href="MembershipInfoPg.html">Membership</a></li>
+                <li><a href="ContactPage.html">Contacts</a></li>
+              </ul>
+            </div>
+          </div>
+        </nav>
 
+        <!-- Main Content  -->
     <div class="container">
             <div class="row">
+              <!-- ------------Left side------------- -->
               <div class="col-md-6">
-                <!-- Event Info Boxes -->
-                <div class="event-info">
+                <!-- Event Timeline -->
+                <div class="event-info" id="EventTimeline">
                   <h3>FrankstonChessClub Tournaments</h3>
                   <p>Our <a href="">Tournament Rules</a> and <a href="">Chess Tournaments 101</a></p>
-
-                  <div class="container Tevents">
-                    <h4>FCCC Classical</h4><p class="Date">11/11/2027</p>
-                    <p>The Championship held Annually to see whos the top player <br>Top Player will Host the Simul and sign the Trophy <br>Rounds weekly 4th week catchup</p>
-                    <p>Time Control: Classical [60+30] <br>Rounds: 7 <br>Participants:15 <br>Type:Club Ratings</p>
-                  </div>
-                  
-                  
-                  <div  class="container Tevents">
-                    <h4>Fun Night 960</h4><p class="Date">11/11/2024</p>
-                    <p>A fun night to try out something random</p>
-                    <p>Time Control: Blitz [5+2] <br>Rounds: 7 <br>Participants:20 <br>Type:Club Ratings</p>
-                  </div>
-                  <div class="container Tevents">
-                    <h4>Blitz Night</h4><p class="Date">12/2/2023</p>
-                    <p> whos the top blitz funny guy player
-                      <br>1 day Tournament</p>
-                      <p>Time Control: Blitz [3+2] <br>Rounds: 9 <br>Participants:35 <br>Type:Club Ratings</p>
-                    </div>
-                    
-                  
-                  <div class="container Tevents">
-                    <h4>FCCC Blitz</h4><p class="Date">11/11/2020</p>
-                    <p>a blitz Tournament </p>
-                    <p>Time Control: Blitz [5+2] <br>Rounds: 12 <br>Participants:NA <br>Type:ACF</p>
-                  </div>
                   </div>
               </div>
+
+              <!-- ------------right side------------- -->
               <div class="col-md-6">
-                <!-- Stat Table Board for Leaderboards -->
+
+                <!--Champs List-->
                 <h2>Club Champions</h2>
-                <div class="container bg-info" style="width: auto;">
-                  <h4>FCC Classical Champion: Jared</h4>
-                  <h4>FCC Slow Rapid Champion: Tim</h4>
-                  <h4>FCC Fast Rapid Champion: James </h4>
-                  <h4>FCC Slow Blitz Champion: Ege</h4>
-                  <h4>FCC Fast Blitz Champion: ---</h4>
-                  
-                </div>
+                <div class="container text-center" style="background-color: darkslategray; width: auto;" id="ClubChamps"></div>
+
+                <!-- leaderBoard -->
                 <table class="table table-sm" id="leaderboard">
                   <h2>Club Annual Circut</h2>
-                  <p>points collected by memebers placing well in Tournements to win an overrall prize it resets at the end of the
-                    finacial year(july)</p>
-                  <thead>
-                    <tr>
-                      <th scope="col">#</th>
-                      <th scope="col">Player</th>
-                      <th scope="col">Points</th>
-                      <th scope="col">Rating</th>
-                      <th scope="col">W/D/L</th>
-                      <th scope="col">Events</th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    <!-- the data of players is loaded in via leaderBoard.js -->
-                  </tbody>
+                  <p>points collected by memebers placing well in Tournements to win an overrall prize it resets at the end of the finacial year(july)</p>
+                  <thead><tr><th scope="col">#</th><th scope="col">Player</th><th scope="col">Points</th><th scope="col">Rating</th><th scope="col">W/D/L</th><th scope="col">Events</th></tr></thead>
+                  <tbody><!-- the data of players is loaded in via leaderBoard.js --></tbody>
                 </table>
-                <button type="button" class="btn btn-info" data-toggle="button" aria-pressed="false" autocomplete="off">
-                  Tornelo
-                </button>
+
+                <!-- Tourney Info Data -->
+                <button type="button" class="btn btn-info" data-toggle="button" aria-pressed="false" autocomplete="off">Tornelo</button>
                 <b>for Tournament Results and Pairings</b>
+
               </div>
             </div>
           </div>
 
 
-<script src="javascript/eventBoard.js"></script><!--how the Events are collored to date!-->
-<script src="javascript/leaderBoard.js"></script>
+
+<script src="javascript/eventBoard.js"></script><!--how the Events is coloured and filled-->
+<script src="javascript/leaderBoard.js"></script><!--how the leaderboard is coloured and filled-->
   </body>
 </html>
 

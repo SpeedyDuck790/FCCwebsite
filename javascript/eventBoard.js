@@ -1,24 +1,49 @@
 //--------------------------------Boxs Generation---------------------------------
 
 const Events = [
-    ["string1", "string2", "string3"],
-    ["string4", "string5", "string6"],
-    ["string7", "string8", "string9"]
+    ["Title","10/11/2025", "Blurb", "0+0", "0", "00", "Na"],
+    ["Title","Date", "Blurb", "0+0", "0", "00", "Na"],
+    ["Title","Date", "Blurb", "0+0", "0", "00", "Na"]
 ];
 
+for (let j = 0; j < Events.length; j++) {
+    
 
+    let eventTimeline = document.getElementById("EventTimeline");
+    let eventbox = document.createElement("div");
+    eventbox.className = "container Tevents";
+    let eventTitle = document.createElement("h4")
+    eventTitle.textContent = Events[j][0];
 
+    let datesection = document.createElement("p");
+    datesection.textContent = "Start Date: "+Events[j][1];
+    datesection.className = "Date";
 
+    let eventDesc = document.createElement("p");
+    eventDesc.textContent = "Description:"+Events[j][2];
 
+    let TimeControl = document.createElement("p");
+    TimeControl.textContent = "Time Control: "+Events[j][3];
 
+    let Rounds = document.createElement("p");
+    Rounds.textContent = "Rounds: "+Events[j][4];
 
+    let Participants = document.createElement("p");
+    Participants.textContent = "Participants: "+Events[j][5];
 
+    let RatingType = document.createElement("p");
+    RatingType.textContent = "Type: "+Events[j][6];
 
+    eventbox.appendChild(eventTitle);
+    eventbox.appendChild(datesection);
+    eventbox.appendChild(eventDesc);
+    eventbox.appendChild(TimeControl);
+    eventbox.appendChild(Rounds);
+    eventbox.appendChild(Participants);
+    eventbox.appendChild(RatingType);
 
-
-
-
-
+    eventTimeline.appendChild(eventbox);
+}
 //--------------------------Box ColourDates-------------------------------------
 
 // Get all divs with class "Tevents

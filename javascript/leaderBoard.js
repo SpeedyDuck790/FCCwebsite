@@ -54,3 +54,37 @@ for (let x = 0; x < leaderboardData.length; x++) {
     // Append the table row to the leaderboard table
     leaderboard.appendChild(playerRow);
 }
+
+
+
+//---------------------------CHAMPIONS INSERTATION HERE
+const champs = ["Jared","Tim","James","Ege","---"]
+
+   
+    let ChampBoard = document.getElementById("ClubChamps");
+    
+let ChampC = document.createElement("h3");
+ChampC.textContent = "FCC Classical Champion: " + champs[0];
+    
+let ChampSR = document.createElement("h4");
+ChampSR.textContent = "FCC Slow Rapid Champion: " + champs[1];
+
+let ChampFR = document.createElement("h4");
+ChampFR.textContent = "FCC Fast Rapid Champion: " + champs[2];
+
+let ChampSB = document.createElement("h4");
+ChampSB.textContent = "FCC Slow Blitz Champion: " + champs[3];
+
+let ChampFB = document.createElement("h4");
+ChampFB.textContent = "FCC Fast Blitz Champion: " + champs[4];
+
+ChampC.style.color = "gold"
+ChampSR.style.color = "gold"
+ChampFR.style.color = "gold"
+ChampSB.style.color = "gold"
+ChampFB.style.color = "gold"
+ChampBoard.appendChild(ChampC);
+ChampBoard.appendChild(ChampSR);
+ChampBoard.appendChild(ChampFR);
+ChampBoard.appendChild(ChampSB);
+ChampBoard.appendChild(ChampFB);
