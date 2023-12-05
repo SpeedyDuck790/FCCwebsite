@@ -15,7 +15,7 @@ fetch('/db/leaderboard.txt')
                         leaderboardData.push(Pstat.split(','));
                     }
 
-                    console.log(leaderboardData);
+
                 
 // example of data transfered
 // john,15,2000, 10/2/5, 3;
@@ -77,7 +77,6 @@ fetch('/db/Champs.txt')
     .then(data => {
        
         let champs = data.split(',');
-        console.log(champs);
 
         let ChampBoard = document.getElementById("ClubChamps");
     

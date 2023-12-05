@@ -21,7 +21,7 @@ fetch('/db/Events.txt')
       Events.push(EventAttr.split(','));
     }
 
-    console.log(Events);
+  
 
     for (let j = 0; j < Events.length-1; j++) {
     

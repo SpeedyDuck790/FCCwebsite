@@ -1,19 +1,33 @@
 // JavaScript to change image and blurb based on selected tab
-        const Games = ['res/Games/board (7).gif', 'res/Games/board (5).gif', 'res/Games/board (6).gif'];
-const titles = ['James Vs Health', 'Matt vs James', 'James Vs Health'];
-const Details = [
-    'A game where James Proves hes better after losing a game to health in embarressing fashion so he knight odds the next game and produces this in blitzing time',
-    'Kingston Open where matt, james, health and erik had joined to show frankstons power ended up in the 6th round mattvsjames as well as health vs erik it was a frankston fight off but here matt trips and falls',
-    'health had bull####ted a draw off james in a friendly bltiz game caused james to show his full focus in another odds game find the missed top move white couldve done to be more accurate in this slaughter',]
+let Game = [];
 
-        function changeImage(x) {
-            const mainGame = document.getElementById('Game');
-            const title = document.getElementById('GameTitle');
-            const Desc = document.getElementById('GameDescription');
+fetch('/db/Gamecollection.txt')
+    .then(response => response.text())
+    .then(data => {
+        let Gamecollection = data.split(';');
 
-            mainGame.src = Games[x];
-            mainGame.alt = `Game ${x + 1}`;
-            title.textContent = titles[x];
-            Desc.textContent = Details[x];
-
+        for (let GameAttr of Gamecollection) {
+            Game.push(GameAttr.split(','));
         }
+
+        for (let i = 0; i < Game.length; i++) {
+            let listItem = document.createElement('li');
+            listItem.onclick = function() { changeImage(i); };
+            listItem.textContent = Game[i][1]; // Assuming Game[i][1] is the game name
+            gameList.appendChild(listItem);
+            
+        }
+    }).catch(error => console.error('Error:bad', error));
+
+function changeImage(x) {
+    const mainGame = document.getElementById('Game');
+    const title = document.getElementById('GameTitle');
+    const Desc = document.getElementById('GameDescription');
+    
+    mainGame.src = "res/Games/"+Game[x][0];
+    mainGame.alt = `Game ${x + 1}`;
+    title.textContent = Game[x][1];
+    Desc.textContent = Game[x][2];
+}
+
+let gameList = document.getElementById('gamelist');
