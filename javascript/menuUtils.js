@@ -30,4 +30,6 @@ fetch('/db/ClubPerson.txt')
                         meetTheClub.push(Mdata.split(','));
                     }
 
+
+                    
                         }).catch(error => console.error('Error:bad', error));
