@@ -1,9 +1,10 @@
 // JavaScript to change image and blurb based on selected tab
 let Game = [];
 
-fetch('/db/Gamecollection.txt')
-    .then(response => response.text())
-    .then(data => {
+fetch('/db/gc.txt')
+.then(response => response.text())
+.then(data => {
+        let gameList = document.getElementById('gamelist');
         let Gamecollection = data.split(';');
 
         for (let GameAttr of Gamecollection) {
@@ -30,4 +31,3 @@ function changeImage(x) {
     Desc.textContent = Game[x][2];
 }
 
-let gameList = document.getElementById('gamelist');
