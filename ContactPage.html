@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,7 +8,7 @@
   <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
 
   <title>Frankston Chess Club</title>
-
+  <link rel="icon" type="image/x-icon" href="res/FCCLOGO.png">
   <!-- Bootstrap Core CSS -->
   <link href="css/bootstrap.min.css" rel="stylesheet">
 
@@ -22,7 +23,7 @@
   <div class="container">
     <div class="navbar-header">
       <a class="navbar-brand" href="index.html">
-        <img src="/res/FCCLOGO.png" style="height: 200%;" alt="picture of club">
+        <img src="res/FCCLOGO.png" style="height: 200%;" alt="picture of club">
       </a>
     </div>
     <div class="collapse navbar-collapse" id="navbar">
@@ -39,24 +40,26 @@
 </nav>
 
 <body class=" text-center"></body>
-  <div>
-    <h1 class="text-center">Contacts</h1>
-    <p>Club Presidents Contact: xxxx-xxx-xxx</p>
-    <p>Clubs Contact Number: 0421 164 677</p>
-    <p>Club's Email Inbox: xxxxxxxx@xxxx.xxx</p>
-    <address>Address: Leawarra House, 200 Beach St, Frankston 3199 <b>from 7.00PM until after 10.30PM.</b> </address>
-    
-    <a href="https://www.facebook.com/FrankstonChessClub/">FaceBook</a>
-    <a href="https://twitter.com/clubfrankston">Twitter</a>
-  </div>
-    
-    
-    <div id="googleMap" style="margin: auto; height:300px; width: 30%;"></div>
+<div>
+  <h1 class="text-center">Contacts</h1>
+  <p>Club Presidents Contact: xxxx-xxx-xxx</p>
+  <p>Clubs Contact Number: 0421 164 677</p>
+  <p>Club's Email Inbox: xxxxxxxx@xxxx.xxx</p>
+  <address>Address: Leawarra House, 200 Beach St, Frankston 3199 <b>from 7.00PM until after 10.30PM.</b> </address>
+
+  <a href="https://www.facebook.com/FrankstonChessClub/" target="_Blank">
+    <img src="res/FB_LOGO.png" id="FB" style="height: 30px; width:30px" /></a>
+  <a href="https://www.instagram.com/frankston_chess_club/" target="_Blank">
+    <img src="res/IG_LOGO.png" id="IG" style="height: 30px; width:30px" /></a>
+</div>
+<br>
+
+<div id="map" style="margin: auto; height:300px; width: 30%; "></div>
 
 
-    <script src="javascript/GoogleMaps.js"></script>
-    <!-- API KEY for maps access use in wordpress-->
-    <!-- AIzaSyC2OL3vT4wcInrkK1e6k24zD53LhzjN3AI -->
-    <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_KEY&callback=myMap"></script>
+<script src="javascript/GoogleMaps.js"></script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBThomCGXnxMORL3A1CnHbAHJRIKhqJyww&callback=initMap"
+  defer></script>
 </body>
+
 </html>

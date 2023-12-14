@@ -1,3 +1,42 @@
-board (7).gif,James Vs Health,A game where James Proves hes better after losing a game to health in embarressing fashion so he knight odds the next game and produces this in blitzing time ;
-board (5).gif,Matt vs James,Kingston Open where matt james health and erik had joined to show frankstons power ended up in the 6th round mattvsjames as well as health vs erik it was a frankston fight off but here matt trips and falls ;
-board (6).gif,James Vs Health,health had bull####ted a draw off james in a friendly bltiz game caused james to show his full focus in another odds game find the missed top move white couldve done to be more accurate in this slaughter ;
+[Event "Frankston Chess Club Championship"]
+[Date "2023.12.10"]
+[Round "?"]
+[White "Matthew Sieredzinski"]
+[Black "James Hill"]
+[Result "1-0"]
+[WhiteElo "1440"]
+[BlackElo "1583"]
+
+1. e4 e6 2. d4 Ke7 3. Nf3 Ke8 4. Nc3 Ke7 5. Bf4 Ke8 6. Bc4 Ke7 7. Nb5 Ke8 8.
+Nxc7+ Ke7 9. Nxa8 Ke8 10. Bc7 Ke7 11. Bxd8+ Ke8 12. Nc7+ Kxd8 13. Nb5 Ke8 14.
+O-O Kd8 15. d5 Ke8 16. dxe6 Kd8 17. exf7 Ke7 18. fxg8=Q Kd8 19. Qxh8 Ke7 20.
+Qd6+ Kd8 21. Qhxf8# 1-0| Matt vs James| IDK what he was thinkings;
+[Event "Live Chess"]
+[Site "Chess.com"]
+[Date "2023.04.28"]
+[Round "?"]
+[White "Yombiee"]
+[Black "Road2GM3000"]
+[Result "1-0"]
+[ECO "A11"]
+[WhiteElo "1438"]
+[BlackElo "2308"]
+[TimeControl "180"]
+[EndTime "6:05:59 PDT"]
+[Termination "Yombiee won by checkmate"]
+
+1. Nf3 d5 2. c4 c6 3. e3 Nf6 4. Be2 a6 5. O-O Bg4 6. b3 e6 7. cxd5 cxd5 8. h3
+Bh5 9. Bb2 Nc6 10. Nc3 Bd6 11. d4 Rc8 12. Qd2 Bb8 13. Ne5 Nxe5 14. dxe5 Bxe5 15.
+f4 Bb8 16. Bxh5 Nxh5 17. Qd4 Nf6 18. Rac1 O-O 19. Rfd1 b5 20. g4 Qe7 21. g5 Nd7
+22. Nxd5 exd5 23. Qxg7# 1-0|Matt vs NM Sean Senft| LETS GOOOOOOOOOOOOOOOOOOOOOOOOOOOOOO;
+[Event "Begonia Open 2023"]
+[Round "3"]
+[White "Anson Liu"]
+[Black "Matthew Sieredzinski"]
+[Result "1/2-1/2"]
+[Opening "Catalan Opening: Closed"]
+
+1. d4 { [%eval 0.0] } 1... Nf6 { [%eval 0.28] } 2. c4 { [%eval 0.16] } 2... e6 { [%eval 0.23] } 3. g3 { [%eval 0.14] } 3... d5 { [%eval 0.16] } 4. Bg2 { [%eval 0.2] } 4... h6 { [%eval 0.41] } 5. Nf3 { [%eval 0.35] } 5... Be7 { [%eval 0.55] } 6. O-O { [%eval 0.55] } 6... O-O { [%eval 0.61] } 7. Qc2 { [%eval 0.37] } 7... Nbd7 { [%eval 0.67] } 8. Nbd2 { [%eval 0.18] } 8... c5 { [%eval 0.11] } 9. cxd5 { [%eval 0.0] } 9... Nxd5 { [%eval 0.19] } 10. a3 { [%eval 0.14] } 10... cxd4 { [%eval 0.38] } 11. Nxd4 { [%eval 0.39] } 11... Bf6 { [%eval 0.47] } 12. N4f3 { [%eval 0.24] } 12... Rb8 { [%eval 0.39] } 13. Ne4 { [%eval 0.3] } 13... b6?! { [%eval 0.98] } { Inaccuracy. Be7 was best. } (13... Be7 14. b4) 14. Nxf6+ { [%eval 1.0] } 14... Qxf6 { [%eval 1.02] } 15. e4 { [%eval 0.97] } 15... Ne7 { [%eval 0.86] } 16. Qc7 { [%eval 0.36] } 16... Ng6 { [%eval 0.49] } 17. Qxa7 { [%eval 0.0] } 17... Bb7 { [%eval 0.0] [%cal Gb7g2] } 18. e5 { [%eval 0.19] } 18... Ndxe5 { [%eval 0.02] } 19. Nxe5 { [%eval 0.0] } 19... Bxg2 { [%eval 0.0] } 20. Nxg6 { [%eval 0.36] } 20... Bxf1 { [%eval 0.08] } 21. Nxf8 { [%eval 0.0] } 21... Bh3 { [%eval 0.0] } 22. Nd7 { [%eval 0.0] [%csl Gg2][%cal Gf6f3 Gf3g2 Gf3d1] } 22... Qf3 { [%eval 0.0] } 23. Qxb8+ { [%eval 0.0] } 23... Kh7 { [%eval 0.0] } 24. Nf8+ { [%eval 0.0] } 24... Kg8 { [%eval 0.0] } { White offer Draw, Accepted 1/2 - 1/2 } { [%cal Gf3d1] } 1/2-1/2|Anson vs Matthew| A very cool Draw;
+
+
+

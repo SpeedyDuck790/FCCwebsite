@@ -8,6 +8,7 @@
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
 
     <title>Frankston Chess Club</title>
+    <link rel="icon" type="image/x-icon" href="res/FCCLOGO.png">
 
     <!-- Bootstrap Core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -17,6 +18,14 @@
 
     <!-- this one is made espically for this page only  -->
     <link rel="stylesheet" href="css/gameViewer.css">
+
+    <!-- PGN Reader -->
+    <link href="https://c2a.chesstempo.com/pgnviewer/v2.5/pgnviewerext.vers1.css" media="all" rel="stylesheet"
+        crossorigin>
+    <script defer language="javascript" src="https://c1a.chesstempo.com/pgnviewer/v2.5/pgnviewerext.bundle.vers1.js"
+        crossorigin></script>
+
+    <link href="https://c1a.chesstempo.com/fonts/MaterialIcons-Regular.woff2" rel="stylesheet" crossorigin>
 </head>
 
 <body>
@@ -25,7 +34,7 @@
         <div class="container">
             <div class="navbar-header">
                 <a class="navbar-brand" href="index.html">
-                    <img src="/res/FCCLOGO.png" style="height: 200%;" alt="picture of club">
+                    <img src="res/FCCLOGO.png" style="height: 200%;" alt="picture of club">
                 </a>
             </div>
             <div class="collapse navbar-collapse" id="navbar">
@@ -40,13 +49,15 @@
             </div>
         </div>
     </nav>
-    
+
 
     <!-- main content -->
     <div class="container">
 
         <div class="main-content">
-            <img id="Game" class="image" src="res/FCCLOGO.png" alt="gameViewer">
+            <div id="Game">
+                <img id="GameImage" class="image" src="res/FCCLOGO.png" alt="gameViewer">
+            </div>
             <h4 id="GameTitle" class="blurb">Select a Game</h4>
             <p id="GameDescription">-</p>
         </div>

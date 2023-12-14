@@ -1,6 +1,6 @@
-
 <!DOCTYPE html>
 <html>
+
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,6 +8,7 @@
   <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
 
   <title>Frankston Chess Club</title>
+  <link rel="icon" type="image/x-icon" href="res/favicon.ico">
 
   <!-- Bootstrap Core CSS -->
   <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -17,81 +18,100 @@
 
 
 </head>
-  <style>
-    .Tevents{
-      width: auto; border: 4px; border-style:groove; border-color: darkslategrey;
-    }
-    .first{
-      background-color: rgba(215, 206, 30, 0.5);
-    }
-    .second{
-      background-color: rgba(138, 135, 132, 0.5);
-    }
-    .third{
-      background-color: rgba(160, 99, 39, 0.5);
-    }
-  </style>
-  <body>
-        <!-- Nav Bar -->
-        <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
-          <div class="container">
-            <div class="navbar-header">
-              <a class="navbar-brand" href="index.html">
-                <img src="/res/FCCLOGO.png" style="height: 200%;" alt="picture of club">
-              </a>
-            </div>
-            <div class="collapse navbar-collapse" id="navbar">
-              <ul class="nav navbar-nav">
-                <li><a href="index.html">Home</a></li>
-                <li class="active"><a href="News&TourmPage.html">Tournaments</a></li>
-                <li><a href="HistoryPage.html">History</a></li>
-                <li><a href="Games.html">Club Games</a></li>
-                <li><a href="MembershipInfoPg.html">Membership</a></li>
-                <li><a href="ContactPage.html">Contacts</a></li>
-              </ul>
-            </div>
-          </div>
-        </nav>
+<style>
+  .Tevents {
+    width: auto;
+    border: 4px;
+    border-style: groove;
+    border-color: darkslategrey;
+  }
 
-        <!-- Main Content  -->
+  .first {
+    background-color: rgba(215, 206, 30, 0.5);
+  }
+
+  .second {
+    background-color: rgba(138, 135, 132, 0.5);
+  }
+
+  .third {
+    background-color: rgba(160, 99, 39, 0.5);
+  }
+</style>
+
+<body>
+  <!-- Nav Bar -->
+  <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
     <div class="container">
-            <div class="row">
-              <!-- ------------Left side------------- -->
-              <div class="col-md-6">
-                <!-- Event Timeline -->
-                <div class="event-info" id="EventTimeline">
-                  <h3>FrankstonChessClub Tournaments</h3>
-                  <p>Our <a href="https://handbook.fide.com/chapter/E012023">Tournament Rules</a> and <a href="/Docs/Chess Tournaments 101.pdf">Chess Tournaments 101</a></p>
-                  </div>
-              </div>
+      <div class="navbar-header">
+        <a class="navbar-brand" href="index.html">
+          <img src="res/FCCLOGO.png" style="height: 200%;" alt="picture of club">
+        </a>
+      </div>
+      <div class="collapse navbar-collapse" id="navbar">
+        <ul class="nav navbar-nav">
+          <li><a href="index.html">Home</a></li>
+          <li class="active"><a href="News&TourmPage.html">Tournaments</a></li>
+          <li><a href="HistoryPage.html">History</a></li>
+          <li><a href="Games.html">Club Games</a></li>
+          <li><a href="MembershipInfoPg.html">Membership</a></li>
+          <li><a href="ContactPage.html">Contacts</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
 
-              <!-- ------------right side------------- -->
-              <div class="col-md-6">
+  <!-- Main Content  -->
+  <div class="container">
+    <div class="row">
+      <!-- ------------Left side------------- -->
+      <div class="col-md-6">
+        <!-- Event Timeline -->
+        <div class="event-info" id="EventTimeline">
+          <h3>FrankstonChessClub Tournaments</h3>
+          <p>Our <a href="https://handbook.fide.com/chapter/E012023">Tournament Rules</a> and <a
+              href="/Docs/Chess Tournaments 101.pdf">Chess Tournaments 101</a></p>
+        </div>
+      </div>
 
-                <!--Champs List-->
-                <h2>Club Champions</h2>
-                <div class="container text-center" style="background-color: darkslategray; width: auto;" id="ClubChamps"></div>
+      <!-- ------------right side------------- -->
+      <div class="col-md-6">
 
-                <!-- leaderBoard -->
-                <table class="table table-sm" id="leaderboard">
-                  <h2>Club Annual Circut</h2>
-                  <p>points collected by memebers placing well in Tournements to win an overrall prize it resets at the end of the finacial year(july)</p>
-                  <thead><tr><th scope="col">#</th><th scope="col">Player</th><th scope="col">Points</th><th scope="col">Rating</th><th scope="col">W/D/L</th><th scope="col">Events</th></tr></thead>
-                  <tbody><!-- the data of players is loaded in via leaderBoard.js --></tbody>
-                </table>
+        <!--Champs List-->
+        <h2>Club Champions</h2>
+        <div class="container text-center" style="background-color: darkslategray; width: auto;" id="ClubChamps"></div>
 
-                <!-- Tourney Info Data -->
-                <button type="button" class="btn btn-info" data-toggle="button" aria-pressed="false" autocomplete="off">Tornelo</button>
-                <b>for Tournament Results and Pairings</b>
+        <!-- leaderBoard -->
+        <table class="table table-sm" id="leaderboard">
+          <h2>Club Annual Circut</h2>
+          <p>points collected by memebers placing well in Tournements to win an overrall prize it resets at the end of
+            the finacial year(july)</p>
+          <thead>
+            <tr>
+              <th scope="col">#</th>
+              <th scope="col">Player</th>
+              <th scope="col">Points</th>
+              <th scope="col">Rating</th>
+              <th scope="col">W/D/L</th>
+              <th scope="col">Events</th>
+            </tr>
+          </thead>
+          <tbody><!-- the data of players is loaded in via leaderBoard.js --></tbody>
+        </table>
 
-              </div>
-            </div>
-          </div>
+        <!-- Tourney Info Data -->
+        <button type="button" class="btn btn-info" data-toggle="button" aria-pressed="false"
+          autocomplete="off">Tornelo</button>
+        <b>for Tournament Results and Pairings</b>
+
+      </div>
+    </div>
+  </div>
 
 
 
-<script src="javascript/eventBoard.js"></script><!--how the Events is coloured and filled-->
-<script src="javascript/leaderBoard.js"></script><!--how the leaderboard is coloured and filled-->
-  </body>
+  <script src="javascript/eventBoard.js"></script><!--how the Events is coloured and filled-->
+  <script src="javascript/leaderBoard.js"></script><!--how the leaderboard is coloured and filled-->
+</body>
+
 </html>
-

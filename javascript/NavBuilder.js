@@ -1,6 +1,6 @@
-window.onload = function() {
-  // Create the nav bar HTML
-  const navBarHtml = `
+window.onload = function () {
+    // Create the nav bar HTML
+    const navBarHtml = `
     <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
         <div class="container">
             <div class="navbar-header">
@@ -22,9 +22,9 @@ window.onload = function() {
     </nav>
   `;
 
-  // Prepend the nav bar to the body
+    // Prepend the nav bar to the body
     document.body.insertAdjacentHTML('afterbegin', navBarHtml);
-    
+
     console.log("Nav Spawned");
 };
 
