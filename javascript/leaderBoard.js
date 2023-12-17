@@ -48,18 +48,11 @@ fetch('./db/leaderboard.txt')
             let ratingData = document.createElement("td");
             ratingData.textContent = leaderboardData[x][2];
 
-            let WDLData = document.createElement("td");
-            WDLData.textContent = leaderboardData[x][3];
-
-            let EventsData = document.createElement("td");
-            EventsData.textContent = leaderboardData[x][4];
             // Append table data elements to the table row
             playerRow.appendChild(rankData);
             playerRow.appendChild(nameData);
             playerRow.appendChild(scoreData);
             playerRow.appendChild(ratingData);
-            playerRow.appendChild(WDLData);
-            playerRow.appendChild(EventsData);
 
             if (x == 0) { playerRow.className = "first"; }
             if (x == 1) { playerRow.className = "second"; }
