@@ -1,4 +1,4 @@
-[Event "Frankston Chess Club Championship"]
+[Event "Live Chess"]
 [Date "2023.12.10"]
 [Round "?"]
 [White "Matthew Sieredzinski"]
