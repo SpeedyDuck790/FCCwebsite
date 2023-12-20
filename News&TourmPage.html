@@ -8,10 +8,16 @@
   <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
 
   <title>Frankston Chess Club</title>
-  <link rel="icon" type="image/x-icon" href="res/favicon.ico">
+  <link rel="icon" type="image/x-icon" href="res/FCCLOGO.png">
 
-  <!-- Bootstrap Core CSS -->
-  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+  <!-- jQuery library -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+  <!-- Latest compiled JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 
   <!-- StyleSheet -vanilla css- -->
   <link href="css/custom.css" rel="stylesheet">
@@ -44,17 +50,22 @@
   <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
     <div class="container">
       <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
         <a class="navbar-brand" href="index.html">
           <img src="res/FCCLOGO.png" style="height: 200%;" alt="picture of club">
         </a>
       </div>
-      <div class="collapse navbar-collapse" id="navbar">
+      <div class="collapse navbar-collapse" id="myNavbar">
         <ul class="nav navbar-nav">
           <li><a href="index.html">Home</a></li>
           <li class="active"><a href="News&TourmPage.html">Tournaments</a></li>
-          <li><a href="HistoryPage.html">About the Club</a></li>
           <li><a href="Games.html">Club Games</a></li>
           <li><a href="MembershipInfoPg.html">Membership</a></li>
+          <li><a href="HistoryPage.html">About the Club</a></li>
           <li><a href="ContactPage.html">Contacts</a></li>
         </ul>
       </div>
@@ -84,8 +95,10 @@
         <!-- leaderBoard -->
         <table class="table table-sm" id="leaderboard">
           <h2>Club Annual Circut</h2>
-          <p>points collected by members placing in Tournements with 1st getting 15points maximum.<br>It resets at the end of
-            the finacial year(july) <br> <b>The Ratings are just Club Ratings based off Online Chess.com Rapid Ratings More for the sole purpose of pairing</b></p>
+          <p>points collected by members placing in Tournements with 1st getting 15points maximum.<br>It resets at the
+            end of
+            the finacial year(july) <br> <b>The Ratings are just Club Ratings based off Online Chess.com Rapid Ratings
+              More for the sole purpose of pairing</b></p>
           <thead>
             <tr>
               <th scope="col">#</th>
