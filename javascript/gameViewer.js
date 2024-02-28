@@ -1,40 +1,61 @@
 // JavaScript to change image and blurb based on selected tab
 let Game = [];
+let gameList = document.getElementById('gamelist');
+let totalGames = 2; // Update this with the total number of games
 
-fetch('./db/gc.txt')
-    .then(response => response.text())
-    .then(data => {
-        let gameList = document.getElementById('gamelist');
-        let Gamecollection = data.split(';');
+// Fetch game details (PGN and player names)
+for (let i = 0; i < totalGames; i++) {
+    fetch(getTextDataPath(i))
+        .then(response => response.text())
+        .then(textData => {
+            Game.push(textData);
 
-        for (let GameAttr of Gamecollection) {
-            Game.push(GameAttr.split('|'));
-        }
+            // Extract player names from PGN and use them as titles
+            let playerNames = extractPlayerNames(textData);
+            updateGameTitle(i, playerNames);
 
-        for (let i = 0; i < Game.length; i++) {
-            let listItem = document.createElement('li');
-            listItem.onclick = function () { changeImage(i); };
-            listItem.textContent = Game[i][1]; // Assuming Game[i][1] is the game name
-            gameList.appendChild(listItem);
+            // Continue processing or rendering logic as needed
+        })
+        .catch(error => console.error('Error fetching text data:', error));
+}
 
-        }
-    }).catch(error => console.error('Error:bad', error));
+function extractPlayerNames(pgn) {
+    // Implement logic to extract player names from PGN
+    // This is just a placeholder; you should adjust it based on your PGN structure
+    let playerNames = pgn.match(/\[White "(.+?)"\]/)[1] + ' vs ' + pgn.match(/\[Black "(.+?)"\]/)[1];
+    return playerNames;
+}
+
+function updateGameTitle(gameIndex, title) {
+    let listItem = document.createElement('li');
+    listItem.onclick = function () { changeImage(gameIndex); };
+    listItem.textContent = title;
+    gameList.appendChild(listItem);
+}
+
+function getTextDataPath(gameIndex) {
+    return `./db/Games/game${gameIndex + 1}.pgn`;
+}
 
 function changeImage(x) {
     const a = document.getElementById('GameImage');
     if (a != null) {
-        a.parentNode.removeChild(a); //Remove FCC logo 
+        a.parentNode.removeChild(a);
     } else {
-        document.getElementsByTagName('ct-pgn-viewer')[0].remove();//Remove the pgn board
+        document.getElementsByTagName('ct-pgn-viewer')[0].remove();
     }
+
     const Games = document.getElementById('Game');
     const title = document.getElementById('GameTitle');
     const Desc = document.getElementById('GameDescription');
 
-    let mainGame = document.createElement('ct-pgn-viewer'); //Create PGN Board
-    mainGame.textContent = Game[x][0]; //Add the PGN to the PGN Board
+    // Create an image element
+    let mainGame = document.createElement('ct-pgn-viewer'); // Create PGN Board
+    
+    mainGame.textContent = Game[x]; // Add the PGN to the PGN Board
     Games.appendChild(mainGame);
-    title.textContent = Game[x][1];
-    Desc.textContent = Game[x][2];
-}
 
+    // Set the title to the extracted player names
+    title.textContent = '';
+    Desc.textContent = ``; // Replace with your description logic
+}
